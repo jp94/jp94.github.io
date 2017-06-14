@@ -1,19 +1,12 @@
+var DEBUG = false;
 
-/* Fallback image */
-// Pseudo-random background color (of my choice ofc :P)
-var MIN_RANGE = 30, MAX_RANGE = 100;
-var colors = [MIN_RANGE, MAX_RANGE, getRandomIntRange(MIN_RANGE, MAX_RANGE)];
-var temp;
+/* Fallback background */
+var colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', 
+                        '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4caf50', 
+                        '#ff5722', '#795548', '#607d8b'];
 
-// Shuffle RGB values
-for (var i = 0; i < colors.length; i++) {
-    var index = getRandomIntRange(0, colors.length - 1);
-    temp = colors[index];
-    colors[index] = colors[i];
-    colors[i] = temp;
-}
-// Set image
-document.body.style.background = "rgb(" + colors[0] + ", " + colors[1] + "," + colors[2] + ")";
+// Set background
+document.body.style.background = colors[getRandomIntRange(0, colors.length)];
 
 /* SVG Text animation */
 // Settings
@@ -21,10 +14,31 @@ var transitionType = ["async", "oneByOne", "delayed"];
 
 new Vivus('svg', {
     type: transitionType[getRandomIntRange(0, transitionType.length - 1)],
-    duration: 150
+    duration: 100
 });
 
-// Helper method for getting a random integer in a range (inclusive)
+/* Misc */
 function getRandomIntRange(min, max) {
-    return parseInt((Math.random() * (max - min + 1)) + min);
+    if (typeof(min) !== 'number' || typeof(max) !== 'number') 
+        throw new TypeError('min and max must be a number.');
+
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+/* Test (DEBUG = true;) */
+if (DEBUG) {
+    var count = 0;
+    setInterval(function() {
+        changeColor(count++ % colors.length);
+    }, 500);
+}
+
+async function changeColor(id) {
+    if (typeof(id) !== 'number')
+        throw new TypeError('id and millis must be a number.')
+
+    id = count % colors.length;
+    document.body.style.background = colors[id];
 }
