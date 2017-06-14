@@ -1,31 +1,56 @@
 body {
     font-family: 'Lato', sans-serif;
     overflow: hidden;
+    color: #F9F9F9;
 }
 
 #nameSvg {
-    top: 30vh;
-
+    top: 35vh;
     /*-webkit-animation: moveSvg 4s linear 1 forwards alternate;
     animation: moveSvg 4s linear 1 forwards alternate; */
 }
 
-.btn {
-    margin-top: 4vh;
-    opacity: 1;
-    padding: 1vh 1vw;
-    border-radius: 1px;
-    border-color: white;
-    background: transparent;
-    color: #F9F9F9;
+.row-centered {
+    text-align: center;
+}
 
-    -webkit-transition: background .3s ease;
-       -moz-transition: background .3s ease;
-        -ms-transition: background .3s ease;
-         -o-transition: background .3s ease;
-            transition: background .3s ease;
-    /*-webkit-animation: buttonAppear 2.5s linear 1 forwards alternate;
-    animation: buttonAppear 2.5s linear 1 forwards alternate;*/
+#footer {
+    background-color: rgba(0, 0, 0, .1);
+    opacity: 5%;
+
+    bottom: 0;
+    line-height: 40px;
+    padding: 0 30px;
+    position: absolute;
+    width: 100%;
+
+    font-size: 100%;
+}
+#footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-item {
+    padding-left: 30px;
+}
+
+/*
+.btn {
+    margin-top: 1vh;
+    padding: 1.1em;
+    border-radius: 1px;
+    border-color: #F9F9F9;
+    background: transparent;
+
+    font-size: 16px;
+    text-transform: uppercase;
+
+    -webkit-transition: background .5s ease;
+       -moz-transition: background .5s ease;
+        -ms-transition: background .5s ease;
+         -o-transition: background .5s ease;
+            transition: background .5s ease;
 }
 
 .btn:hover {
@@ -38,7 +63,4 @@ body {
          -o-transition: background .5s ease;
             transition: background .5s ease;
 }
-
-.row-centered {
-    text-align: center;
-}
+*/
