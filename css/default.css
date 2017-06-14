@@ -1,0 +1,44 @@
+body {
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+#nameSvg {
+    top: 30vh;
+
+    /*-webkit-animation: moveSvg 4s linear 1 forwards alternate;
+    animation: moveSvg 4s linear 1 forwards alternate; */
+}
+
+.btn {
+    margin-top: 4vh;
+    opacity: 1;
+    padding: 1vh 1vw;
+    border-radius: 1px;
+    border-color: white;
+    background: transparent;
+    color: #F9F9F9;
+
+    -webkit-transition: background .3s ease;
+       -moz-transition: background .3s ease;
+        -ms-transition: background .3s ease;
+         -o-transition: background .3s ease;
+            transition: background .3s ease;
+    /*-webkit-animation: buttonAppear 2.5s linear 1 forwards alternate;
+    animation: buttonAppear 2.5s linear 1 forwards alternate;*/
+}
+
+.btn:hover {
+    background-color: #F9F9F9;
+    color: #000000;
+
+    -webkit-transition: background .5s ease;
+       -moz-transition: background .5s ease;
+        -ms-transition: background .5s ease;
+         -o-transition: background .5s ease;
+            transition: background .5s ease;
+}
+
+.row-centered {
+    text-align: center;
+}
