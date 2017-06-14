@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
 <body>
+<div class='background-darken'>
 <div class="container">
     <div class="row row-centered">
         <div class="col-xs-12 col-md-6 col-md-offset-3 " id="nameSvg">
@@ -55,11 +56,21 @@
 </div>
 
 <div id="footer">
-    <div id="resume">
-        <a href='Resume_JongHanPark.pdf''>Resume</a>
-    </div>
+    <span>
+        <div id="resume" class="footer-item">
+            <a href='Resume_JongHanPark.pdf''>Resume</a>
+        </div>
+    </span>
+    <span id="footer-right">
+        <div class="footer-item">
+            <a id="image-credit"></a>
+        </div>
+        <div class="footer-item">
+            Design by James
+        </div>
+    </span>
 </div>
-
+</div>
 
 <!-- TODO Remove all unnecessary code for js (faster boot) -->
 <script src="js/vivus.min.js"></script>
