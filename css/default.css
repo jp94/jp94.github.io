@@ -38,7 +38,6 @@ body {
     padding: 0 30px;
     position: absolute;
     width: 100%;
-    font-size: 100%;
     animation-name: fade-in;
     animation-delay: 0.5s;
     animation-duration: 0.75s;
