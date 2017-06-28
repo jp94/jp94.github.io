@@ -1,0 +1,52 @@
+body {
+    background: url('../img/404.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+    color: #F9F9F9;
+}
+
+.error {
+    font-size: 150px;
+    content: 'hello';
+    animation: err 2s linear infinite;
+}
+
+.error-description {
+    font-size: 20px;
+}
+
+@keyframes err {
+    0%,
+    8%,
+    9%,
+    34%,
+    35%,
+    55%,
+    56%,
+    89%,
+    90%,
+    100% {
+        transform: scaleY(1);
+    }
+    8.5% {
+        transform: translateX(300%);
+    }
+    34.5% {
+        transform: translateX(200%);
+    }
+    55.5% {
+        transform: translateX(180%);
+    }
+    89.5% {
+        transform: translateX(-20%);
+    }
+}
+
+.center-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
