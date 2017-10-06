@@ -10,6 +10,7 @@ var colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5',
 document.body.style.background = colors[getRandomIntRange(0, colors.length)];
 
 /* SVG Text animation */
+
 // Settings
 var transitionType = ["async", "oneByOne", "delayed"];
 
@@ -17,6 +18,8 @@ new Vivus('svg', {
     type: transitionType[getRandomIntRange(0, transitionType.length - 1)],
     duration: 100
 });
+
+/* Popup Notification */
 
 /* Misc */
 function getRandomIntRange(min, max) {
