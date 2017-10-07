@@ -20,6 +20,28 @@ new Vivus('svg', {
 });
 
 /* Popup Notification */
+new Noty({
+    type: 'info',
+    layout: 'topRight',
+    text: '<strong>Server SSD Failure Recovery In-Progress</strong>',
+    timeout: 12000
+}).show();
+
+new Noty({
+    type: 'success',
+    layout: 'topRight',
+    text: '✓ Web Server <br />✓ URL Shortener',
+    timeout: 6000
+}).show();
+
+new Noty({
+    type: 'error',
+    layout: 'topRight',
+    text: '✘ File Hoster <br />✘ Gaming Server',
+    timeout: 9000
+}).show();
+
+
 
 /* Misc */
 function getRandomIntRange(min, max) {
