@@ -30,14 +30,14 @@ new Noty({
 new Noty({
     type: 'success',
     layout: 'topRight',
-    text: '✓ Web Server <br />✓ URL Shortener',
+    text: '✓ <a href="https://t.fluf.me">Hastebin</a> <br />✓ <a href="https://s.fluf.me">URL Shortener</a>',
     timeout: 6000
 }).show();
 
 new Noty({
     type: 'error',
     layout: 'topRight',
-    text: '✘ File Hoster <br />✘ Gaming Server',
+    text: '✘ File Host',
     timeout: 9000
 }).show();
 
